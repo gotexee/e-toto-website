@@ -1,6 +1,3 @@
-Voici ton README dans un style plus naturel et professionnel :
-
-```markdown
 # e-toto-website
 
 **e-toto-website** est notre premier projet fullstack développé en équipe de trois.  
@@ -30,7 +27,6 @@ Les tâches peuvent être déplacées facilement via un système de **drag & dro
 
 ### Tableau de bord (Task Manager)
 ![Dashboard Screenshot](./images/dashboard.png)
-
 
 ---
 
@@ -79,19 +75,16 @@ Avant de commencer, assure-toi d'avoir installé :
 ### Étapes d'installation
 
 **1. Cloner le dépôt**
-
 ```bash
 git clone https://github.com/gotexee/e-toto-website.git
 ```
 
 **2. Se diriger dans le dossier**
-
 ```bash
 cd e-toto-website
 ```
 
 **3. Lancer l'application avec Docker**
-
 ```bash
 docker compose up --build
 ```
@@ -103,4 +96,3 @@ Note : Le flag `--build` reconstruit les images Docker. Pour les lancements suiv
 Une fois les conteneurs lancés, l'application est accessible à l'adresse suivante :
 
 **http://localhost:3000**
-
