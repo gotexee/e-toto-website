@@ -30,39 +30,6 @@ Les tâches peuvent être déplacées facilement via un système de **drag & dro
 
 ---
 
-## Architecture du projet
-
-![Architecture](./images/architecture.png)
-
-Le projet suit une architecture **fullstack** classique avec :
-- **Frontend** : Interface utilisateur responsive et interactive
-- **Backend** : API REST pour la gestion des données
-- **Base de données** : Persistance des utilisateurs et des tâches
-- **Docker** : Conteneurisation pour un déploiement simplifié
-
----
-
-## Technologies utilisées
-
-**Frontend**
-- React - Bibliothèque JavaScript pour l'interface
-- CSS/SCSS - Stylisation de l'application
-- React DnD (ou library drag & drop) - Gestion du drag & drop
-
-**Backend**
-- Node.js - Runtime JavaScript côté serveur
-- Express - Framework web minimaliste
-- JWT - Authentification sécurisée
-
-**Base de données**
-- MongoDB / PostgreSQL *(précise ta BDD)*
-
-**DevOps**
-- Docker & Docker Compose - Conteneurisation
-- Git & GitHub - Gestion de versions
-
----
-
 ## Installation et lancement
 
 ### Prérequis
