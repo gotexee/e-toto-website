@@ -1,3 +1,4 @@
+
 import "./Application2.css";
 import { useNavigate } from "react-router-dom";
 

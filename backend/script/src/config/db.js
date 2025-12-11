@@ -1,4 +1,3 @@
-// config/db.js
 const mysql = require("mysql2/promise");
 require("dotenv").config();
 
@@ -22,4 +21,3 @@ console.log("🟩 DB pool created with:", {
 module.exports = db;
 console.log("DB NAME =", process.env.DB_NAME);
 
-// connexion a my sql, pour que notre appli communique avec notre base de données mysql

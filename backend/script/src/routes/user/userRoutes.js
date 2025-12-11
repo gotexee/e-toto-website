@@ -20,6 +20,7 @@ router.post("/register", async (req, res) => {
       return res.status(409).json({ message: "Cet email est déjà utilisé" });
     }
 
+    
     const [result] = await db.query(
       "INSERT INTO user (email, password, name, firstname) VALUES (?, ?, ?, ?)",
       [email, password, name, firstname]

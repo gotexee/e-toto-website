@@ -6,6 +6,7 @@ GRANT ALL PRIVILEGES ON etodo.* TO 'kaets0ner'@'%';
 FLUSH PRIVILEGES;
 
 
+
 CREATE DATABASE `etodo`;
 USE `etodo`;
 

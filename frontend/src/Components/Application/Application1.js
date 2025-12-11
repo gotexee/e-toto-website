@@ -7,6 +7,7 @@ export default function Application1() {
 
   const go = useNavigate();
 
+  
   return (
     <div className="app">
       <div className="left">
