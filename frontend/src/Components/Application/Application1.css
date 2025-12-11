@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #e7ecf4;
+}
+
+.app {
+  display: flex;
+  height: 350px;
+}
+
+.left {
+  width: 240px;
+  background: #91a9c9;
+  padding: 20px;
+  border-radius: 20px;
+  height: 97vh;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.hello {
+  color: white;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+
+.box {
+  background: #7997c6;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  margin: 30px 0;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.light {
+  background: #cfd8e7;
+  color: white;
+}
+
+.right {
+  flex: 1;
+  padding: 20px;
+}
+
+.title {
+  background: #a0b2ce;
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 40px;
+}
+
+.tasklist {
+  margin-top: 20px;
+  margin-bottom: 620px;
+  background: #91a9c9;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.task {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.small {
+  padding: 10px;
+}
+
+.t {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.health {
+  background: #e4e8ff;
+  color: #626dc6;
+}
+
+.work {
+  background: #e5ffe9;
+  color: #58a56d;
+}
+
+.mental {
+  background: #f3e6ff;
+  color: #ad75c6;
+}
+
+.bloc {
+  display: none;
+}
+
+.leftt {
+  display: none;
+}
+.button_container {
+  display: flex;
+  justify-content: right;
+  align-items: center; 
+}
+
+.button_create {
+  background-color: lawngreen;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  max-width: 10%;
+  border-radius: 20px;
+  border: none;
+  transition: transform 0.2s;
+}
+.button_create:active {
+  transform: scale(0.95);
+}
+.popup {
+  width: 800px;
+  background-color: green;
+  margin-top: -50px;
+  border-radius: 6px;
+  position:fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0px 30px 60px;
+  visibility: hidden;
+}
+.status_btn {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 0 10px;
+  background-color: lightblue;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+.popup button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 764px) {
+  .left {
+    display: none;
+  }
+
+  .title {
+    background: none;
+  }
+
+  .bloc {
+    display: flex;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .leftt {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .box {
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 20px;
+  }
+}

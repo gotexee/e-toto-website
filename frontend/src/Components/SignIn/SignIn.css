@@ -1,0 +1,299 @@
+
+@media only screen and (max-width: 600px) {
+    * { box-sizing: border-box; }
+
+    .body {
+        background-color: #F6FAFF;
+        width: 100%;
+    }
+
+    .header_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header_image {
+        width: 120px;
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    .line {
+        border: none;
+        border-top: 4px solid #444444;
+        margin: 0 2rem;
+        height: 5px;
+    }
+
+    
+    .signin_text {
+        color: #A79C9C;
+        font-size: 4rem;
+        margin: 1.5rem 0 2rem 2rem;
+    }
+
+    .description_text {
+        color: black;
+        font-size: 1.8rem;
+        margin: 1rem 2rem;
+    }
+
+
+    .login_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+
+ 
+    .login_group {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+        height: 55px; 
+        background-color: rgba(142, 174, 210, 0.28);
+        border-radius: 20px;
+        padding: 0 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .login_image {
+        width: 30px;
+        margin-left: 2rem;
+    }
+
+    .login_input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        margin-left: 1rem;
+        color: #000;
+    }
+
+    .login_input::placeholder {
+        color: #000;
+        font-size: 18px;
+    }
+
+    .forgot_password {
+        margin-left: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    .create_account_link {
+        color: #000;
+        text-decoration: none;
+    }
+
+  
+
+    .btn_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 1.5rem 3rem;
+        font-size: 1.1rem;
+        background: none;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        min-width: 200px;
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .magnetic {
+        background: #1565C0;
+    }
+
+
+
+    .footer_container {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #444444;
+        color: #fff;
+        text-align: center;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    * { box-sizing: border-box; }
+
+    .body { background-color: #F6FAFF; }
+
+    .header_image {
+        width: 160px;
+        margin-left: 2rem;
+    }
+
+    .line {
+        border-top: 4px solid #444444;
+        margin: 0 2rem;
+    }
+
+    .signin_text {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .description_text {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 1rem 2rem;
+    }
+
+    .login_container {
+        width: 100%;
+        padding: 0 1.5rem;
+        margin-top: 4rem;
+    }
+
+    /* SAME INPUT GROUP */
+    .login_group {
+        max-width: 600px;
+        height: 55px;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+        padding: 0 1rem;
+        display: flex;
+        align-items: center;
+        background-color: rgba(142, 174, 210, 0.28);
+    }
+
+    .login_image {
+        width: 30px;
+        margin-left: 2rem;
+    }
+
+    .login_input {
+        flex: 1;
+        font-size: 18px;
+        margin-left: 1rem;
+        background: none;
+        border: none;
+    }
+
+    .btn {
+        min-width: 500px;
+    }
+
+    .magnetic { background: #1565C0; }
+
+    .footer_container {
+        position: fixed;
+        bottom: 0;
+        background-color: #444444;
+        color: #fff;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    * { box-sizing: border-box; }
+
+    .body { background-color: #F6FAFF; width: 100%; }
+
+    .main { padding: 2rem; }
+
+    .header_image {
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .line {
+        border-top: 4px solid #444444;
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+
+    .login_container_4_all {
+        background-color: hsl(219, 83%, 95%);
+        border-radius: 20px;
+        padding: 2rem;
+        max-width: 1000px;
+        margin: 4rem auto;
+    }
+
+    .signin_text {
+        text-align: center;
+        font-size: 4rem;
+        color: #A79C9C;
+        margin-bottom: 4rem;
+    }
+
+    .description_text {
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 1rem 2rem;
+    }
+
+    .login_container {
+        width: 100%;
+        padding: 0 1.5rem;
+        margin-top: 4rem;
+    }
+
+    .login_group {
+        max-width: 600px;
+        height: 65px;
+        margin-bottom: 1rem;
+        padding: 0 1rem;
+        background-color: rgba(142, 174, 210, 0.28);
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .login_image {
+        width: 40px;
+        margin-left: 2rem;
+    }
+
+    .login_input {
+        flex: 1;
+        font-size: 20px;
+        background: none;
+        border: none;
+        margin-left: 1rem;
+    }
+
+    .btn_container {
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .btn {
+        min-width: 500px;
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        color: #fff;
+    }
+
+    .magnetic { background: #1565C0; }
+
+    .footer_container {
+        position: fixed;
+        bottom: 0;
+        background-color: #444444;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+}

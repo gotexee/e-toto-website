@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #e7ecf4;
+}
+
+.page {
+  padding: 20px;
+}
+
+.title {
+  font-size: 34px;
+}
+
+.content {
+  background: #6d966a;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.hist {
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.taskbox {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.big {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub {
+  display: flex;
+  gap: 10px;
+  margin-left: 28px;
+}
+
+.t {
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.health {
+  background: #e4e8ff;
+  color: #626dc6;
+}
+
+.mental {
+  background: #f3e6ff;
+  color: #ad75c6;
+}
+
+.sport {
+  background: #e5ffe9;
+  color: #58a56d;
+}
+
+.back {
+  width: 70px;
+  height: 70px;
+  border: 4px solid black;
+  border-radius: 50%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto 0;
+  cursor: pointer;
+}

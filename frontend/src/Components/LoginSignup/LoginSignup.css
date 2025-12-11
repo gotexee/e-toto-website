@@ -1,0 +1,573 @@
+
+@media only screen and (max-width: 600px) { 
+    * {
+    box-sizing: border-box;
+    }   
+    .body {
+        background-color: #F6FAFF;
+        width: 100%; 
+    }
+    .header_container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+
+    .header_image {
+        width: 120px;
+        height: auto;
+        margin-left: 2rem;
+        margin-bottom: none;
+    }
+
+
+    .line {
+        border: none;
+        border-top: 4px solid #444444;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+
+    .login_text {
+        color: #A79C9C;
+        font-size: 4rem;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .description_text {
+        color: black;
+        font-size: 1.8rem;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+
+    .login_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 1.5rem;
+        box-sizing: border-box; 
+    }
+    .login_1,
+    .login_2 {
+        display: flex;
+        align-items: center;
+        background-color: rgba(142, 174, 210, 0.28);
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 400px;
+        height: 55px;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    .login_image {
+        width: 30px;
+        height: auto;
+        margin: 0rem 0rem 0 2rem;
+    }
+    .login_input { 
+        flex: 1;
+        margin: 0 2rem 0 1rem;
+        background-color: transparent;
+        color: #000;
+        border: none;
+        min-width: auto;
+        max-width: 400px;
+        height: 100%;
+        padding: 0;
+        font-size: 18px;
+        line-height: 55px;
+        outline: none;
+    }
+    .login_input::placeholder {
+    color: #000;
+    opacity: 1;
+    font-size: 18px;
+    }
+
+
+    .forgot_password {   
+        margin: 0rem 0rem 6rem 2rem;
+        justify-content: left;
+    }
+    .forgot_password_link {
+        color: #000;
+        text-decoration: none;
+        margin: 10px
+    }
+
+    .create_account_link {
+        color: #000;
+        text-decoration: none;
+        
+    }
+
+
+    .btn_container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn {
+        position: relative;
+        padding: 1.5rem 3rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #ffffff;
+        background: none;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        min-width: 200px;
+        z-index: 1;
+    }
+    .magnetic {
+        background: #1565C0; 
+        border: none;
+        overflow: visible;
+        
+    }
+    .particles-field {
+        position: absolute;
+        inset: -100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: #1565C0;
+        border-radius: 50%;
+    }
+    .magnetic:hover .particles-field {
+        opacity: 1;
+    }
+    @keyframes particleFloat { 
+        0% { transform: translate(var(--x), var(--y)) scale(0); }
+        50% { transform: translate(calc(var(--x) * -1), calc(var(--y) * -1)) scale(1); }
+        100% { transform: translate(var(--x), var(--y)) scale(0); }
+    }
+
+
+
+    .footer_container {
+        position: fixed;
+        left: 0;
+         bottom: 0;
+        width: 100%;
+        background-color: #444444;
+        color: white;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+         z-index: 10;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+   * {
+        box-sizing: border-box;
+    }   
+    .main {
+        background-color: #F6FAFF;
+        width: 100%; 
+    }
+    .body {
+        background-color: #F6FAFF;
+        width: 100%;
+    }
+    .header_container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+
+
+    .header_image {
+        width: 160px;
+        height: auto;
+        margin-left: 2rem;
+        margin-bottom: none;
+    }
+
+
+
+    .line {
+        border: none;
+        border-top: 4px solid #444444;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+
+    .login_text {
+        display: flex;
+        color: #A79C9C;
+        font-size: 4rem;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    .description_text {
+        text-align: center;
+        color: black;
+        font-size: 1.8rem;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+
+
+    .login_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 1.5rem;
+        box-sizing: border-box; 
+        margin-top: 4rem; 
+    }
+    .login_1,
+    .login_2 {
+        display: flex;
+        align-items: center;
+        background-color: rgba(142, 174, 210, 0.28);
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 600px;
+        height: 55px;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    .login_image {
+        width: 30px;
+        height: auto;
+        margin: 0rem 0rem 0 2rem;
+    }
+    .login_input { 
+        flex: 1;
+        margin: 0 2rem 0 1rem;
+        background-color: transparent;
+        color: #000;
+        border: none;
+        min-width: auto;
+        max-width: 400px;
+        height: 100%;
+        padding: 0;
+        font-size: 18px;
+        line-height: 55px;
+        outline: none;
+    }
+    .login_input::placeholder {
+    color: #000;
+    opacity: 1;
+    font-size: 18px;
+    }
+
+
+    .forgot_password {   
+        margin: 0rem 0rem 6rem 3rem;
+        justify-content: left;
+    }
+    .forgot_password_link {
+        color: #000;
+        text-decoration: none;
+        margin: 10px
+    }
+
+    .create_account_link {
+        color: #000;
+        text-decoration: none;
+        
+    }
+
+    .btn_container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn {
+        position: relative;
+        padding: 1.5rem 3rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #ffffff;
+        background: none;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        min-width: 500px;
+        
+        z-index: 1;
+    }
+    .magnetic {
+        background: #1565C0; 
+        overflow: visible;
+        
+    }
+    .particles-field {
+        position: absolute;
+        inset: -100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: #1565C0;
+        border-radius: 50%;
+    }
+    .magnetic:hover .particles-field {
+        opacity: 1;
+    }
+    @keyframes particleFloat { 
+        0% { transform: translate(var(--x), var(--y)) scale(0); }
+        50% { transform: translate(calc(var(--x) * -1), calc(var(--y) * -1)) scale(1); }
+        100% { transform: translate(var(--x), var(--y)) scale(0); }
+    }
+
+
+    .footer_container {
+        position: fixed;
+        left: 0;
+         bottom: 0;
+        width: 100%;
+        background-color: #444444;
+        color: white;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+         z-index: 10;
+    }
+}
+@media only screen and (min-width: 768px) {
+     * {
+        box-sizing: border-box;
+    }   
+    .main {
+        background-color: #F6FAFF;
+        width: 100%; 
+        padding: 2rem;
+    }
+    .body {
+        background-color: #F6FAFF;
+        width: 100%;
+    }
+    .header_container{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .header_image {
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .line-container {
+    padding: 0 2rem;
+    }
+
+
+    .line {
+        border: none;
+        border-top: 4px solid #444444;
+        color: #333;
+        overflow: visible;
+        text-align: center;
+        height: 5px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 2rem auto;
+    }
+
+    .login_container_4_all {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: hsl(219, 83%, 95%);
+        border-radius: 20px;
+        padding: 2rem;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+
+    .login_text {
+        display: flex;
+        color: #A79C9C;
+        font-size: 4rem;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 4rem;
+    }
+    .description_text {
+        text-align: center;
+        color: black;
+        font-size: 1.8rem;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+
+
+    .login_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 1.5rem;
+        box-sizing: border-box; 
+        margin-top: 4rem; 
+    }
+    .login_1,
+    .login_2 {
+        display: flex;
+        align-items: center;
+        background-color: rgba(142, 174, 210, 0.28);
+        border-radius: 20px;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 600px;
+        height: 65px;
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    .login_image {
+        width: 40px;
+        height: auto;
+        margin: 0rem 0rem 0 2rem;
+    }
+    .login_input { 
+        flex: 1;
+        margin: 0 2rem 0 1rem;
+        background-color: transparent;
+        color: #000;
+        border: none;
+        min-width: auto;
+        max-width: 400px;
+        height: 100%;
+        padding: 0;
+        font-size: 20px;
+        line-height: 60px;
+        outline: none;
+    }
+    .login_input::placeholder {
+    color: #000;
+    opacity: 1;
+    font-size: 20px;
+    }
+
+
+    .forgot_password {   
+        margin: 0rem 0rem 6rem 3rem;
+        justify-content: left;
+        font-size: 18px;
+    }
+    .forgot_password_link {
+        color: #000;
+        text-decoration: none;
+        margin: 10px
+    }
+
+    .create_account_link {
+        color: #000;
+        text-decoration: none;
+        
+    }
+
+
+    .btn_container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .btn {
+        position: relative;
+        padding: 1.5rem 3rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #ffffff;
+        background: none;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        min-width: 500px;
+        
+        z-index: 1;
+    }
+    .magnetic {
+        background: #1565C0; 
+        border: none;
+        overflow: visible;
+        
+    }
+    .particles-field {
+        position: absolute;
+        inset: -100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: #1565C0;
+        border-radius: 50%;
+    }
+    .magnetic:hover .particles-field {
+        opacity: 1;
+    }
+    @keyframes particleFloat { 
+        0% { transform: translate(var(--x), var(--y)) scale(0); }
+        50% { transform: translate(calc(var(--x) * -1), calc(var(--y) * -1)) scale(1); }
+        100% { transform: translate(var(--x), var(--y)) scale(0); }
+    }
+
+
+    .footer_container {
+        position: fixed;
+        left: 0;
+         bottom: 0;
+        width: 100%;
+        background-color: #444444;
+        color: white;
+        text-align: center;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        transition: opacity 0.4s ease, transform 0.4s ease;
+         z-index: 10;
+    }
+}

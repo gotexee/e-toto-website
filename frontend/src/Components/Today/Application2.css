@@ -1,0 +1,71 @@
+.Today {
+  display: column;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #D0DEEE;
+
+}
+h3{
+    color : grey;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+b{
+    color:black;
+
+}
+
+
+.title {
+  color :grey;
+  padding: 15px;
+  font-size: 40px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+
+.up {
+    text-align: center;
+    display: column;
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+
+  .task {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.small {
+  padding: 10px;
+}
+
+@media (max-width: 764px) {
+ 
+  .title {
+    text-align: right;
+    display:flex;
+    background: none;
+    padding: 55px;
+    font-size: 40px;
+
+  }
+
+  h3{
+    color : grey;
+    text-align: start;
+    font-size: 20px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+
+}
