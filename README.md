@@ -30,7 +30,7 @@ Les tâches peuvent être déplacées facilement via un système de **drag & dro
 
 ---
 
-## Installation et lancement
+## Installation et lancement.
 
 ### Prérequis
 
