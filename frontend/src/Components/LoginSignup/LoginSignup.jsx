@@ -1,4 +1,3 @@
-
 import './LoginSignup.css';
 import mail_icon from '../Assets/mail.png';
 import password_icon from '../Assets/padlock.png';
@@ -13,20 +12,24 @@ const LoginSignup = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
 
     function handleSubmit(event) {
         event.preventDefault();
+        setLoading(true);
+        setError('');
 
         axios.post('http://localhost:8080/login', { email, password })
             .then(res => {
                 console.log("Réponse backend :", res.data);
                 localStorage.setItem("token", res.data.token);
-
                 window.location.href = "/todolist";
             })
             .catch(err => {
                 console.log("Erreur requête :", err);
-                alert("Email ou mot de passe incorrect");
+                setError("Email ou mot de passe incorrect");
+                setLoading(false);
             });
     }
 
@@ -43,8 +46,8 @@ const LoginSignup = () => {
 
             <main className="main">
                 <div className='login_container_4_all'>
-                    <section>
-                        <div className="login_text">Login👋</div>
+                    <section className="login_section">
+                        <div className="login_text">Login <span className="wave-emoji">👋</span></div>
                         <div className="description_text">
                             Organisez vos journées, suivez vos tâches et restez productif avec simplicité.
                         </div>
@@ -53,31 +56,35 @@ const LoginSignup = () => {
                         </div>
                     </section>
 
-                    <section>
+                    <section className="form_section">
                         <form onSubmit={handleSubmit}>
                             <div className="login_container">
-                                <div className="login_1">
+                                <div className="login_input_group">
                                     <img className="login_image" src={mail_icon} alt="email icon" />
                                     <input
                                         className="login_input"
                                         type="email"
                                         placeholder="Email"
+                                        value={email}
                                         onChange={e => setEmail(e.target.value)}
                                         required
                                     />
                                 </div>
 
-                                <div className="login_2">
+                                <div className="login_input_group">
                                     <img className="login_image" src={password_icon} alt="password icon" />
                                     <input
                                         className="login_input"
                                         type="password"
                                         placeholder="Password"
+                                        value={password}
                                         onChange={e => setPassword(e.target.value)}
                                         required
                                     />
                                 </div>
                             </div>
+
+                            {error && <div className="error_message">{error}</div>}
 
                             <div className="forgot_password">
                                 <a className="forgot_password_link" href="#">Forgot Password ?</a>
@@ -85,9 +92,9 @@ const LoginSignup = () => {
                             </div>
 
                             <div className="btn_container">
-                                <button type="submit" className="btn magnetic">
-                                    <span>Login</span>
-                                    <div className="particles-field" id="particleField"></div>
+                                <button type="submit" className="btn" disabled={loading}>
+                                    <span className="btn_text">{loading ? 'Connecting...' : 'Login'}</span>
+                                    <span className="btn_arrow">→</span>
                                 </button>
                             </div>
                         </form>
