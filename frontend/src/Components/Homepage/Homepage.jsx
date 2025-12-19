@@ -52,7 +52,7 @@ const HomePage = () => {
       </div>
 
       <footer className="styleFooter">
-        <p>&copy; 2024 Gautier - Your Task Management Companion</p>
+        <p>&copy; 2025 Gautier - Your Task Management Companion</p>
         <nav>
           <ul>
             <li>Marseille, France</li>
